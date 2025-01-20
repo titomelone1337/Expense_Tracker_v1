@@ -1,0 +1,127 @@
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Textarea Styling */
+input[type="text"], input[type="number"], input[type="date"], select, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea Specific Styling */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Button Styling */
+/* Button Styling with Increased Spacing */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Specific Spacing for Buttons in Table */
+td button:first-of-type {
+  margin-right: 15px; /* Increased spacing for the first button */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+/* Select Dropdown */
+select {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Additional Input Field Styling */
+input[type="text"], input[type="number"], input[type="date"] {
+  transition: background-color 0.3s;
+}
+
+input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/* Form Title Styling */
+form h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Success Message Styling */
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

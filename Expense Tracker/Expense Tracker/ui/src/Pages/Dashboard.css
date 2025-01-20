@@ -1,0 +1,132 @@
+/* Dashboard container */
+.dashboard-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    text-align: center; /* Center text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  /* Heading styles */
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Section titles */
+  h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e4e4e4;
+    padding-bottom: 5px;
+    width: 100%; /* Ensures the border spans the entire section */
+    text-align: left;
+    padding-left: 10px; /* Align the section title to the left */
+  }
+  
+  /* Category list styling */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Overview section */
+  .overview {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .overview p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Recent items styling */
+  .recent-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .recent-items ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .recent-items li {
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .recent-items li span {
+    font-size: 1rem;
+  }
+  
+  .recent-items li:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 15px;
+      width: 90%; /* Adjust width for mobile */
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    h3 {
+      font-size: 1.3rem;
+    }
+  
+    .overview p {
+      font-size: 1rem;
+    }
+  
+    .recent-items li {
+      font-size: 0.9rem;
+    }
+  }
+  
